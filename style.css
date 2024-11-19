@@ -20,78 +20,44 @@ body {
     align-items: center; /* Centrado vertical */
 }
 
-/* Estilos específicos para la página principal (index.html) */
-body.index .container {
-    width: 80%;  /* Aumenta el ancho al 80% de la pantalla */
-    max-width: 800px;  /* Limita el ancho máximo */
-    padding: 30px; /* Más espacio interno */
-}
-
-body.index h1 {
-    font-size: 2.5rem;  /* Aumenta el tamaño del título */
-    margin-bottom: 30px;
-    margin-top: 40px;
-}
-
-body.index img {
-    max-width: 60%; /* Aumenta el tamaño de la imagen */
-}
-
-body.index button {
-    padding: 12px 25px; /* Botones más grandes */
-}
-
-/* Estilos específicos para la página de detalles (detalle.html) */
-body.detalle .container {
-    width: 90%;  /* Ancho más pequeño en la página de detalles */
-    max-width: 600px;  /* Limita el ancho máximo */
-    padding: 20px;  /* Menos espacio interno */
-}
-
-body.detalle h1 {
-    font-size: 2rem;  /* Título más pequeño */
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-body.detalle img {
-    max-width: 50%; /* Imagen más pequeña en detalle */
-    margin-bottom: 10px;
-}
-
-body.detalle button {
-    padding: 10px 20px;  /* Botón más pequeño */
-}
-
-/* Contenedor principal */
+/* Estilos generales para el contenedor */
 .container {
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.05); /* Fondo transparente */
+    width: 100%; /* Ocupa el 100% del ancho */
+    max-width: 650px; /* Ancho máximo del contenedor */
+    max-height: 900px; /* Alto máximo del contenedor */
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo transparente */
     border-radius: 10px;
     border: 1px solid #ff8906; /* Contorno */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
 
-/* Encabezado */
+/* Estilos para las imágenes */
+body.detalle img {
+    max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    max-height: 480px; /* Limita la altura de la imagen */
+    width: auto; /* Mantiene la proporción */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Asegura que la imagen no se recorte y se mantenga dentro del tamaño */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los encabezados */
 h1 {
     font-size: 2rem;
-    color: #fffffe; /* Color principal */
-    font-weight: 700; /* Negrita */
+    color: #fffffe;
+    font-weight: 700;
     margin-bottom: 20px;
-    margin-top: 60px; /* Añade un margen superior para evitar que el título se acerque demasiado al botón */
-    font-size: 1.8rem;
 }
 
-#titulo-principal {
-    font-size: 3rem;
-}
-
-/* Texto de párrafos */
+/* Estilos para los párrafos */
 p {
     font-size: 1rem;
-    color: #a7a9be; /* Color de párrafo */
-    font-weight: 400; /* Regular */
+    color: #a7a9be;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -100,73 +66,47 @@ a {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #ff8906; /* Color destacado */
-    font-weight: 600; /* Semibold */
+    color: #ff8906;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #f25f4c; /* Cambia al color secundario al pasar el mouse */
-}
-
-/* Imagen del libro */
-img {
-    max-width: 50%; /* Tamaño al 50% */
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #f25f4c;
 }
 
 /* Botones */
 button {
-    padding: 10px 20px;
-    background-color: #ff8906; /* Fondo del botón */
-    color: #fffffe; /* Texto del botón */
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    background-color: #ff8906;
+    color: #fffffe;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
-    font-family: 'Poppins', Arial, sans-serif; /* Fuente principal */
-    font-weight: 500; /* Semibold */
+    font-size: 16px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #f25f4c; /* Cambia al color secundario */
-    transform: scale(1.05); /* Efecto al pasar el mouse */
+    background-color: #f25f4c;
+    transform: scale(1.05);
 }
 
 button:active {
-    transform: scale(0.95); /* Efecto de clic */
+    transform: scale(0.95);
 }
 
-/* Botón de la parte superior */
+/* Estilos para el botón superior */
 .top-nav {
     position: absolute;
-    top: 20px; /* Espaciado desde el borde superior */
-    left: 20px; /* Espaciado desde el borde izquierdo */
+    top: 20px;
+    left: 20px;
 }
 
-button.top-nav {
-    padding: 5px 10px;
-    font-size: 14px;
-}
-
-/* Estilos para pantallas móviles */
-@media (max-width: 600px) {
-    .top-nav {
-        top: 15px; /* Reduce el espacio superior para pantallas pequeñas */
-        left: 15px; /* Ajuste de margen a la izquierda */
-    }
-
-    /* Aseguramos que el botón no se solape con el título */
-    body.detalle h1 {
-        margin-top: 80px; /* Aumentamos el margen superior para que el título tenga espacio */
-    }
-}
-
-/* Botón en la parte inferior */
+/* Estilos para el botón inferior */
 .bottom-nav {
     margin-top: 20px;
 }
@@ -190,7 +130,7 @@ body:before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Asegura que las partículas se queden en el fondo */
+    z-index: -1;
 }
 
 /* Botón invertido: colores invertidos para el botón "Marcar como leído" */
@@ -213,14 +153,54 @@ button.invertido:active {
     border: 2px solid #f25f4c; /* Borde cuando se hace clic */
 }
 
-/* Estilos para el contenedor del botón "Marcar como leído" */
-.mark-read {
-    margin-top: 40px; /* Espaciado superior */
-    text-align: center; /* Centrado del contenido */
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .top-nav {
+        top: 10px;
+        left: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 90%; /* Más ancho en pantallas pequeñas */
+    }
+
+    body.detalle h1 {
+        margin-top: 40px;
+        font-size: 1.5rem; /* Título más pequeño */
+    }
+
+    img {
+        max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+        max-height: 320px; /* Limita la altura para pantallas pequeñas */
+    }
+
+    button {
+        font-size: 16px; /* Botones un poco más pequeños en móvil */
+    }
 }
 
-#mensaje-leido {
-    margin-top: 10px;
-    color: #fff; /* Color de éxito (verde) */
-    font-weight: 600;
+/* Estilos para pantallas muy pequeñas (por ejemplo, smartphones en modo vertical) */
+@media (max-width: 400px) {
+    .top-nav {
+        top: 5px;
+        left: 5px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    body.detalle h1 {
+        font-size: 1.2rem; /* Título aún más pequeño */
+    }
+
+    img {
+        max-height: 250px; /* Limita aún más la altura de la imagen */
+    }
+
+    button {
+        font-size: 14px; /* Ajuste para botones pequeños */
+    }
 }
