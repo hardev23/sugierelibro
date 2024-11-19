@@ -194,7 +194,7 @@ button.invertido:active {
     }
 
     img {
-        max-height: 150px; /* Limita aún más la altura de la imagen */
+        max-height: 25%; /* Limita aún más la altura de la imagen */
     }
 
     button {
