@@ -173,7 +173,7 @@ button.invertido:active {
 
     img {
         max-width: 50%; /* Asegura que la imagen ocupe todo el ancho disponible */
-        max-height: 320px; /* Limita la altura para pantallas pequeñas */
+        max-height: 200px; /* Limita la altura para pantallas pequeñas */
     }
 
     button {
