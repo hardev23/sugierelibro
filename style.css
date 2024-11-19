@@ -165,7 +165,7 @@ button.invertido:active {
 
     body.detalle img {
         max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
-        max-height: 250px; /* Limita la altura de la imagen */
+        max-height: 350px; /* Limita la altura de la imagen */
         width: auto; /* Mantiene la proporción */
         height: auto; /* Mantiene la proporción */
         object-fit: contain; /* Asegura que la imagen no se recorte y se mantenga dentro del tamaño */
@@ -178,6 +178,20 @@ button.invertido:active {
         max-width: 90%; /* Ancho máximo de 90% para pantallas pequeñas */
         padding: 10px; /* Menos espacio en móvil */
         margin-top: 10px; /* Añadir algo de espacio en la parte superior */
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        background-color: #ff8906;
+        color: #fffffe;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Poppins', Arial, sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
 }
 
@@ -201,7 +215,7 @@ button.invertido:active {
 
     body.detalle img {
         max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
-        max-height: 150px; /* Limita la altura de la imagen */
+        max-height: 350px; /* Limita la altura de la imagen */
         width: auto; /* Mantiene la proporción */
         height: auto; /* Mantiene la proporción */
         object-fit: contain; /* Asegura que la imagen no se recorte y se mantenga dentro del tamaño */
@@ -211,6 +225,16 @@ button.invertido:active {
     }
 
     button {
-        font-size: 14px; /* Ajuste para botones pequeños */
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        background-color: #ff8906;
+        color: #fffffe;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Poppins', Arial, sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
 }
