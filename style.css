@@ -210,7 +210,8 @@ button.invertido:active {
     }
 
     .container {
-        max-width: 80%; /* Ancho máximo de 90% para pantallas pequeñas */
+        max-width: 90%; /* Ancho máximo de 90% para pantallas pequeñas */
+        max-height: 90%;
         padding: 10px; /* Menos espacio en móvil */
         margin-top: 10px; /* Añadir algo de espacio en la parte superior */
     }
