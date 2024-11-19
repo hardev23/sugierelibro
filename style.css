@@ -163,9 +163,15 @@ button.invertido:active {
         z-index: 10; /* Asegurarse de que se quede por encima de otros elementos */
     }
 
-    img {
-        max-width: 20%;
-        max-height: 25%;
+    body.detalle img {
+        max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+        max-height: 250px; /* Limita la altura de la imagen */
+        width: auto; /* Mantiene la proporción */
+        height: auto; /* Mantiene la proporción */
+        object-fit: contain; /* Asegura que la imagen no se recorte y se mantenga dentro del tamaño */
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     .container {
@@ -193,8 +199,15 @@ button.invertido:active {
         margin-top: 50px;
     }
 
-    img {
-        max-height: 25%; /* Limita aún más la altura de la imagen */
+    body.detalle img {
+        max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+        max-height: 150px; /* Limita la altura de la imagen */
+        width: auto; /* Mantiene la proporción */
+        height: auto; /* Mantiene la proporción */
+        object-fit: contain; /* Asegura que la imagen no se recorte y se mantenga dentro del tamaño */
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     button {
