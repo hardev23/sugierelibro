@@ -237,4 +237,9 @@ button.invertido:active {
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
+    #volver-btn{
+        padding: 7px 16px;
+        margin-top: 20px;
+    }
 }
