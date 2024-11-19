@@ -167,12 +167,12 @@ button.invertido:active {
     }
 
     body.detalle h1 {
-        margin-top: 40px;
+        margin-top: 60px;
         font-size: 1.5rem; /* Título más pequeño */
     }
 
     img {
-        max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+        max-width: 50%; /* Asegura que la imagen ocupe todo el ancho disponible */
         max-height: 320px; /* Limita la altura para pantallas pequeñas */
     }
 
@@ -194,6 +194,7 @@ button.invertido:active {
 
     body.detalle h1 {
         font-size: 1.2rem; /* Título aún más pequeño */
+        margin-top: 50px;
     }
 
     img {
