@@ -169,8 +169,9 @@ button.invertido:active {
     }
 
     .container {
-        padding: 10px;
-        margin-top: 50px; /* Espacio para evitar que el contenido se superponga */
+        max-width: 90%; /* Ancho máximo de 90% para pantallas pequeñas */
+        padding: 10px; /* Menos espacio en móvil */
+        margin-top: 10px; /* Añadir algo de espacio en la parte superior */
     }
 }
 
