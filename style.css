@@ -178,7 +178,7 @@ button.invertido:active {
         max-width: 90%;
         max-height: 90vh; /* 90% de la altura de la ventana */
         padding: 10px; /* Menos espacio en móvil */
-        margin-top: 10px; /* Añadir algo de espacio en la parte superior */
+        /*margin-top: 10px;*/ /* Añadir algo de espacio en la parte superior */
     }
 
     button {
@@ -214,7 +214,7 @@ button.invertido:active {
         max-width: 90%;
         max-height: 90vh; /* 90% de la altura de la ventana */
         padding: 10px; /* Menos espacio en móvil */
-        margin-top: 10px; /* Añadir algo de espacio en la parte superior */
+        /*margin-top: 10px;*/ /* Añadir algo de espacio en la parte superior */
     }
 
     body.detalle h1 {
