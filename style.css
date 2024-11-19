@@ -53,6 +53,15 @@ h1 {
     margin-bottom: 20px;
 }
 
+#titulo-principal {
+    font-size: 3rem;
+}
+
+#sugerir-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
 /* Estilos para los párrafos */
 p {
     font-size: 1rem;
