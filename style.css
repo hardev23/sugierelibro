@@ -175,7 +175,7 @@ button.invertido:active {
     }
 
     .container {
-        max-width: 90%; /* Ancho máximo de 90% para pantallas pequeñas */
+        max-width: 80%; /* Ancho máximo de 90% para pantallas pequeñas */
         padding: 10px; /* Menos espacio en móvil */
         margin-top: 10px; /* Añadir algo de espacio en la parte superior */
     }
@@ -193,6 +193,11 @@ button.invertido:active {
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
+    #volver-btn{
+        padding: 7px 16px;
+        margin-top: 10px;
+    }
 }
 
 
@@ -205,7 +210,9 @@ button.invertido:active {
     }
 
     .container {
-        padding: 10px;
+        max-width: 80%; /* Ancho máximo de 90% para pantallas pequeñas */
+        padding: 10px; /* Menos espacio en móvil */
+        margin-top: 10px; /* Añadir algo de espacio en la parte superior */
     }
 
     body.detalle h1 {
@@ -240,6 +247,6 @@ button.invertido:active {
 
     #volver-btn{
         padding: 7px 16px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
