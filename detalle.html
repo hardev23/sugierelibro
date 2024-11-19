@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Libro</title>
+    <link rel="stylesheet" href="style.css"> <!-- Estilos combinados -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="detalle">
+    <!-- Contenedor de partículas -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <!-- Botón para volver a la página principal -->
+        <div class="top-nav">
+            <button id="volver-btn">Página principal</button>
+        </div>
+        
+        <!-- Detalles del libro -->
+        <h1 id="titulo"></h1>
+        <img id="portada" alt="Portada del libro">
+        <p><strong>Autor:</strong> <span id="autor"></span></p>
+        <p><strong>Género:</strong> <span id="genero"></span></p>
+        <a id="goodreads-link" href="#" target="_blank">Ver en Goodreads</a>
+
+        <!-- Botón para sugerir otro libro -->
+        <div class="bottom-nav">
+            <button id="sugerir-otro-btn">Sugerir otro libro</button>
+        </div>
+
+        <!-- Botón para marcar el libro como leído (debajo de los detalles) -->
+        <div class="mark-read">
+            <button id="marcar-leido-btn" class="invertido">Marcar como leído</button>
+            <p id="mensaje-leido" style="display:none; color: #fff;">¡Libro marcado como leído!</p>
+        </div>
+    </div>
+
+    <!-- Incluir la librería de partículas -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js" defer></script>
+
+    <!-- Script para manejar el botón de "Marcar como leído" -->
+    <script>
+        document.getElementById('marcar-leido-btn').addEventListener('click', function() {
+            document.getElementById('mensaje-leido').style.display = 'block'; // Muestra el mensaje
+            this.disabled = true; // Deshabilita el botón para evitar que se marque más de una vez
+        });
+    </script>
+
+</body>
+</html>
